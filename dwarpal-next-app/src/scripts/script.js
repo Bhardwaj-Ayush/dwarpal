@@ -1,0 +1,5 @@
+(() => {
+    alert("Hellloooo script.js");
+
+}
+)();

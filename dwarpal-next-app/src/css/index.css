@@ -1,0 +1,30 @@
+@import url("../app/globals.css");
+body:focus{
+    background-color: magenta;
+}
+*{
+    box-sizing: content-box;
+}
+a{
+    text-decoration:none ;
+}
+a:hover{
+    color:rgb(13, 102, 132);
+    
+}
+
+a:visited{
+    color:rgb(13, 102, 132);
+}
+button{
+    color:--brand-color;
+    background-color: --brand-bg-color;
+    
+}
+button:focus{
+    background-color:lime;
+}
+button:hover{
+    
+    background-color:pink;
+}

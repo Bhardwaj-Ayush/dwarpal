@@ -1,0 +1,36 @@
+{
+    "name": "Dwarpal",
+    "description": "An application to tackle dark patterns using Next",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "src/scripts/background.js",
+        "type": "module"
+    },
+    "homepage_url": "https://github.com/Avishkaar007/dwarpal",
+    "action": {
+        "default_popup": "public/index.html"
+    },
+    "side_panel": {
+        "default_path": "public/index.html"
+    },
+    "icons": {
+        "16": "public/logo/logo16.png",
+        "32": "public/logo/logo32.png",
+        "48": "public/logo/logo48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "src/scripts/script.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ]
+}
