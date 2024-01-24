@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import Hello from '@/components/hello'
+import Hello from '@/components/main'
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center ">
       <Hello />
     </main>
   )

@@ -2,8 +2,34 @@
 body:focus{
     background-color: magenta;
 }
+
 *{
     box-sizing: content-box;
+}
+
+body{
+    width:10rem;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 2rem;
+
+}
+#status{
+    display: flex;
+    align-items: center;
+    padding: 0.1rem;
+}
+#status img{
+    scale: 1.2;
+    padding-bottom: 16px;
+    border-radius:50%;
+
+
 }
 a{
     text-decoration:none ;
@@ -17,14 +43,15 @@ a:visited{
     color:rgb(13, 102, 132);
 }
 button{
-    color:--brand-color;
-    background-color: --brand-bg-color;
-    
+    color:var(--brand-color);
+    background-color: var(--brand-bg-color);
+    border:none;
+    width:5rem;
+    height:2rem;
 }
-button:focus{
-    background-color:lime;
-}
+
 button:hover{
     
-    background-color:pink;
+    color:black;
+    background-color:rgb(158, 194, 237);
 }

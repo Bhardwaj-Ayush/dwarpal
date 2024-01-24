@@ -1,5 +1,5 @@
+const tnc = require("..\js\tnc.js");
 (() => {
-    alert("Hellloooo script.js");
-
+    tnc();
 }
 )();
